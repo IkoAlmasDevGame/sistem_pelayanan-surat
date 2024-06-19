@@ -97,7 +97,7 @@ CREATE TABLE `sistem` (
 --
 
 INSERT INTO `sistem` (`id`, `nama_desa`, `nama_website`, `logo`, `gambar`, `flags`) VALUES
-(1, 'Desa Tugu Jaya', 'Sistem Informasi Pelayanan  Surat Pengantar KTP', 'logo_pemkab_bogor.png', '1.jpg', 1);
+(1, 'Desa Tugu Jaya', 'Sistem Informasi Pelayanan  Surat Pengantar KTP', 'logo_pemkab.png', '2.jpeg', 1);
 
 -- --------------------------------------------------------
 
