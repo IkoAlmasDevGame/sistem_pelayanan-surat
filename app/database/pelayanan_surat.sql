@@ -42,18 +42,6 @@ INSERT INTO `jenis_surat` (`jenis_surat`, `nama_jenis_surat`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `pelayanan`
---
-
-CREATE TABLE `pelayanan` (
-  `id_pelayanan` int(11) NOT NULL,
-  `id_pengajuan` int(11) NOT NULL,
-  `id_akun` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
--- --------------------------------------------------------
-
---
 -- Table structure for table `pengajuan_ktp`
 --
 
@@ -181,12 +169,6 @@ ALTER TABLE `user`
 --
 ALTER TABLE `jenis_surat`
   MODIFY `jenis_surat` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
-
---
--- AUTO_INCREMENT for table `pelayanan`
---
-ALTER TABLE `pelayanan`
-  MODIFY `id_pelayanan` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `pengajuan_ktp`
