@@ -2,6 +2,14 @@
     box-sizing: border-box;
 }
 
+.card > .card-header > .card-title2, .card-title {
+    font-size: 15px;
+    font-weight: 500;
+    font-family: 'Times New Roman';
+    line-height: 1.5rem;
+    letter-spacing: 3px;
+}
+
 thead > tr > th{
     font-size: 14px;
     font-family: 'Times New Roman';

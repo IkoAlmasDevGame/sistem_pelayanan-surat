@@ -91,7 +91,7 @@ if($_SESSION['role'] == "admin"){
             </a>
             <ul id="laporan-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
                 <li>
-                    <a href="" aria-current="page">
+                    <a href="?page=laporan-surat" aria-current="page">
                         <i class="bi bi-circle"></i>
                         <span>surat pengantar ktp</span>
                     </a>
@@ -109,7 +109,7 @@ if($_SESSION['role'] == "admin"){
             </a>
             <ul id="person-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
                 <li>
-                    <a href="" aria-current="page">
+                    <a href="?page=pengguna" aria-current="page">
                         <i class="bi bi-circle"></i>
                         <span>Mengelola Data Pengguna</span>
                     </a>

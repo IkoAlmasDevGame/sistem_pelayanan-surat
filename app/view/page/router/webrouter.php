@@ -28,6 +28,10 @@ if(!isset($_GET['page'])){
         case 'cetak':
             require_once("../cetak/cetak.php");
             break;
+            
+        case 'download':
+            require_once("../cetak/download.php");
+            break;
 
         case 'keluar':
             if(isset($_SESSION['status'])){

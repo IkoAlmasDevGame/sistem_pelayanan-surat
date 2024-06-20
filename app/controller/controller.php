@@ -25,6 +25,31 @@ class Authentication {
         }
     }
 
+    public function ubahakun(){
+        $username = htmlspecialchars($_POST['username']) ? htmlentities($_POST['username']) : $_POST['username'];
+        $password = md5(htmlspecialchars($_POST['password']), false) ? md5(htmlentities($_POST['password']), false) : md5($_POST['password'], false);
+        $repassword = md5(htmlspecialchars($_POST['repassword']), false) ? md5(htmlentities($_POST['repassword']), false) : md5($_POST['repassword'], false);
+        $role = htmlspecialchars($_POST['role']) ? htmlentities($_POST['role']) : $_POST['role'];
+        $id_akun = htmlspecialchars($_POST['id_akun']) ? htmlentities($_POST['id_akun']) : $_POST['id_akun'];
+
+        $row = $this->konfig->update($username,$password,$repassword,$role,$id_akun);
+        if($row === true){
+            return true;
+        }else{
+            return false;
+        }
+    }
+
+    public function hapusakun(){
+        $id_akun = htmlspecialchars($_GET['id_akun']) ? htmlentities($_GET['id_akun']) : $_GET['id_akun'];
+        $row = $this->konfig->delete($id_akun);
+        if($row === true){
+            return true;
+        }else{
+            return false;
+        }
+    }
+
     public function signin(){
         session_start();
         $username = $username = htmlentities($_POST['username']) ? htmlspecialchars($_POST['username']) : $_POST['username'];

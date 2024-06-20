@@ -124,7 +124,7 @@ class Pengguna {
             die;
             exit;
         }else{
-            echo "<script>document.location.href = '../ui/header.php?page=pengguna';</script>";
+            echo "<script>document.location.href = '../ui/header.php?page=pengguna&aksi=ubahmengelola&id_akun=$id_akun';</script>";
             die;
             exit;
         }
@@ -137,11 +137,11 @@ class Pengguna {
         $row = $this->db->query($sql);
 
         if($row){
-            echo "";
+            echo "<script>document.location.href = '../ui/header.php?page=pengguna';</script>";
             die;
             exit;
         }else{
-            echo "";
+            echo "<script>document.location.href = '../ui/header.php?page=pengguna';</script>";
             die;
             exit;
         }

@@ -18,7 +18,7 @@
         <link href="../../../../dist/vendor/simple-datatables/style.css" rel="stylesheet">
         <link href="../../../../dist/css/style.css" rel="stylesheet">
         <link href="https://cdn.jsdelivr.net/npm/@fullcalendar/core/main.css" rel="stylesheet" />
-        <link href="./styles-min.css" rel="stylesheet">
+        <link href="./styles.css" type="text/css" rel="stylesheet">
         <?php
             session_start();
             require_once("../../../config/auth.php");

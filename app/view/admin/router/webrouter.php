@@ -30,6 +30,18 @@ if(!isset($_GET['page'])){
         case 'status-permohonan':
             require_once("../permohonan/permohonan.php");
             break;
+        
+        case 'pengguna':
+            require_once("../mengelola/mengelola.php");
+            break;
+        
+        case 'laporan-surat':
+            require_once("../laporan/laporan.php");
+            break;
+        
+        case 'print-surat':
+            require_once("../laporan/print.php");
+            break;
 
         case 'keluar':
             if(isset($_SESSION['status'])){
@@ -64,6 +76,19 @@ if(!isset($_GET['aksi'])){
         case 'tambah-proses':
             $pengajuan->buatstatusproses();
             break;
+
+        // Aksi Page Mengelola
+        case 'ubahmengelola':
+            require_once("../mengelola/ubahmengelola.php");
+            break;
+        case 'ubah-mengelola':
+            $user->ubahakun();
+            break;
+        case 'hapus-mengelola':
+            $user->hapusakun();
+            break;
+        // Aksi Page Mengelola
+
 
         default:
             require_once("../../../controller/controller.php");
