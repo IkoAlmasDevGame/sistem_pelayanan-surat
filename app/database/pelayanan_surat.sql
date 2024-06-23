@@ -131,12 +131,6 @@ ALTER TABLE `jenis_surat`
   ADD PRIMARY KEY (`jenis_surat`);
 
 --
--- Indexes for table `pelayanan`
---
-ALTER TABLE `pelayanan`
-  ADD PRIMARY KEY (`id_pelayanan`);
-
---
 -- Indexes for table `pengajuan_ktp`
 --
 ALTER TABLE `pengajuan_ktp`
