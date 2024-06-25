@@ -52,7 +52,7 @@ class Authentication {
 
     public function signin(){
         session_start();
-        $username = $username = htmlentities($_POST['username']) ? htmlspecialchars($_POST['username']) : $_POST['username'];
+        $username = htmlentities($_POST['username']) ? htmlspecialchars($_POST['username']) : $_POST['username'];
         $password = md5($_POST['password'], false);
         
         $row = $this->konfig->login($username,$password);
