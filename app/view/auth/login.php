@@ -4,9 +4,6 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Sistem Pelayanan Surat Pengantar KTP">
-        <meta name="description" content="Desa TuguJaya Sistem Pelayanan Surat Pengantar KTP">
-        <meta name="description" content="@copyright 2024 Desa TuguJaya">
         <?php 
             require_once("../../database/koneksi.php");
             $row = $configs->query("SELECT * FROM sistem WHERE flags = '1'");
