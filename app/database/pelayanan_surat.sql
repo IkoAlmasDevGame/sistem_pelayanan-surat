@@ -97,7 +97,7 @@ CREATE TABLE `sistem` (
 --
 
 INSERT INTO `sistem` (`id`, `nama_desa`, `nama_website`, `logo`, `gambar`, `flags`) VALUES
-(1, 'Desa Tugu Jaya', 'Sistem Informasi Pelayanan  Surat Pengantar KTP', 'logo_pemkab.png', '2.jpeg', 1);
+(1, 'Desa Suka Maju Bersama', 'Sistem Informasi Pelayanan  Surat Pengantar KTP', 'logo_pemkab.png', '2.jpg', 0);
 
 -- --------------------------------------------------------
 
@@ -129,12 +129,6 @@ INSERT INTO `user` (`id_akun`, `username`, `password`, `repassword`, `role`) VAL
 --
 ALTER TABLE `jenis_surat`
   ADD PRIMARY KEY (`jenis_surat`);
-
---
--- Indexes for table `pelayanan`
---
-ALTER TABLE `pelayanan`
-  ADD PRIMARY KEY (`id_pelayanan`);
 
 --
 -- Indexes for table `pengajuan_ktp`
